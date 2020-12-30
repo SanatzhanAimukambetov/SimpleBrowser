@@ -45,7 +45,7 @@ class WebViewController: UIViewController, UITextFieldDelegate, WKNavigationDele
         webTF.layer.cornerRadius = 10
         webTF.keyboardType = .URL
         webTF.autocapitalizationType = .none
-        webTF.auto
+        webTF.autocorrectionType = .no
         return webTF
     }()
     
