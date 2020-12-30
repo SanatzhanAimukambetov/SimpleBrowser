@@ -45,6 +45,7 @@ class WebViewController: UIViewController, UITextFieldDelegate, WKNavigationDele
         webTF.layer.cornerRadius = 10
         webTF.keyboardType = .URL
         webTF.autocapitalizationType = .none
+        webTF.auto
         return webTF
     }()
     
@@ -116,7 +117,6 @@ class WebViewController: UIViewController, UITextFieldDelegate, WKNavigationDele
     //MARK: Button actions
     @objc private func historyButtonTapped(_ sender: Any) {
         let vc = HistoryViewController()
-//        navigationController?.pushViewController(vc, animated: true)
         self.present(vc, animated: true, completion: nil)
     }
     
